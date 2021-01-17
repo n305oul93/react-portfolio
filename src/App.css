@@ -13,6 +13,10 @@ body {
 }
 
 /* ***************** Navbar **************************** */
+nav {
+  z-index: 2;
+}
+
 .logo {
   width: 5rem;
 }
@@ -39,6 +43,12 @@ nav ul li {
   max-width: 17.25rem;
   padding: 0 !important;
   height: 6rem !important;
+}
+
+@media (max-width: 768px) {
+  .navbar-brand {
+    width: 7rem;
+  }
 }
 
 .navbar-nav > li > a.active,
@@ -73,6 +83,7 @@ nav ul li {
   align-items: center;
   text-align: center;
   font-family: 'Roboto Condensed' sans-serif;
+  z-index: 1;
 }
 
 .main-info h1 {
@@ -86,6 +97,15 @@ nav ul li {
   color: var(--primary-white);
 }
 
+@media (max-width: 768px) {
+  .main-info h1 {
+    font-size: 1.7rem !important;
+  }
+  .typed-text {
+    font-size: 1.3rem !important;
+  }
+}
+
 /* --- HEADER MAIN OFFER BUTTON ---  */
 .btn-main-offer {
   border: 1px solid var(--primary-red);
@@ -94,4 +114,25 @@ nav ul li {
   padding: 0.625rem 0.75rem 0.75rem 0.75rem;
   color: var(--primary-white);
   margin: 2rem;
+}
+
+.btn-main-offer:hover {
+  text-decoration: none;
+  background-color: var(--primary-hover-red);
+  color: var(--primary-white);
+  transition: 0.2s ease-in-out;
+}
+
+/* --- PARTICLES JS ---  */
+.tsparticles-canvas-el {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .particles-canvas {
+    display: none;
+  }
 }
