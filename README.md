@@ -2,18 +2,12 @@
 
 ###### A site created using react that showcases various projects I created or assisted on, and also has my resume and contatct information.
 
----
-
 ## Deployment
-
----
 
 Deployed to personal Cloud based VPS  
 [Live version](djpringle.me)
 
 ## Built with
-
----
 
 - React v17.0.1
 - Bootstrap v4.5.3
