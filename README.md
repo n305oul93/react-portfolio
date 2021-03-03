@@ -8,7 +8,7 @@
 
 ---
 
-Deployed to personal Cloud based VPS
+Deployed to personal Cloud based VPS  
 [Live version](djpringle.me)
 
 ## Built with
