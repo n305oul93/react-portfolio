@@ -1,5 +1,6 @@
 import React from 'react'
 import Typed from 'react-typed'
+import { Link } from 'react-scroll'
 import '../css/Header.css'
 
 const Header = () => {
@@ -20,10 +21,15 @@ const Header = () => {
           backSpeed={60}
           loop
         />
-        {/* FIXME: link */}
-        <a href='#' className='btn-main-offer'>
+        <Link
+          smooth={true}
+          to='contact'
+          offset={-110}
+          className='btn-main-offer'
+          href='#'
+        >
           contact me
-        </a>
+        </Link>
       </div>
     </div>
   )

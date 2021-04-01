@@ -6,10 +6,8 @@ import {
   faDocker,
   faLinux
 } from '@fortawesome/free-brands-svg-icons'
-import { faDesktop, faFileCode } from '@fortawesome/free-solid-svg-icons'
 import '../css/Skills.css'
 
-// FIXME: update messaging
 const Skills = () => {
   return (
     <div id='skills' className='skills'>
@@ -23,8 +21,9 @@ const Skills = () => {
               </div>
               <h3>Javascript</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Provident, a.
+                A high-level, just-in-time compiled & multi-paradigm language.
+                Alongside HTML and CSS, it is one of the core technologies of
+                the World Wide Web.
               </p>
             </div>
           </div>
@@ -36,8 +35,9 @@ const Skills = () => {
               </div>
               <h3>Docker</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Obcaecati, accusantium?
+                A set of platform as a service (PaaS) products that use OS-level
+                virtualization to deliver software in packages called
+                containers.
               </p>
             </div>
           </div>
@@ -49,8 +49,8 @@ const Skills = () => {
               </div>
               <h3>AWS</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas,
-                expedita.
+                An on-demand cloud computing platform offering services such as
+                computing, database & application services.
               </p>
             </div>
           </div>
@@ -62,8 +62,8 @@ const Skills = () => {
               </div>
               <h3>Linux</h3>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas,
-                expedita.
+                A family of open-source Unix-like operating systems based on the
+                Linux kernel.
               </p>
             </div>
           </div>

@@ -9,6 +9,7 @@ import {
   LinkedinShareButton,
   LinkedinIcon
 } from 'react-share'
+import { Link } from 'react-scroll'
 import '../css/Footer.css'
 
 const Footer = () => {
@@ -21,40 +22,69 @@ const Footer = () => {
               <p>Garland, Tx</p>
             </div>
             <div className='d-flex'>
-              <a href='tel:555-555-5555'>(469)248-5637</a>
+              <a href='tel:469-248-5637'>(469)248-5637</a>
             </div>
             <div className='d-flex'>
-              <p>dez@djpringle.me</p>
+              <a href='mailto:dez@djpringle.me'>dez@djpringle.me</a>
             </div>
           </div>
           <div className='col-lg-3 col-md-2 col-sm-6'>
             <div className='row'>
               <div className='col'>
-                {/* FIXME: links */}
-                <a href='' className='footer-nav'>
-                  Home
-                </a>
+                <Link smooth={true} to='home' className='footer-nav' href='#'>
+                  Home <span className='sr-only'>(current)</span>
+                </Link>
                 <br />
-                <a href='' className='footer-nav'>
+                <Link
+                  smooth={true}
+                  to='about'
+                  offset={-110}
+                  className='footer-nav'
+                  href='#'
+                >
                   About Me
-                </a>
+                </Link>
                 <br />
-                <a href='' className='footer-nav'>
+                <Link
+                  smooth={true}
+                  to='skills'
+                  offset={-110}
+                  className='footer-nav'
+                  href='#'
+                >
                   Skills
-                </a>
+                </Link>
               </div>
               <div className='col'>
-                <a href='' className='footer-nav'>
+                <Link
+                  smooth={true}
+                  to='experience'
+                  offset={-110}
+                  className='footer-nav'
+                  href='#'
+                >
                   Experience
-                </a>
+                </Link>
                 <br />
-                <a href='' className='footer-nav'>
+                <Link
+                  smooth={true}
+                  to='portfolio'
+                  offset={-110}
+                  className='footer-nav'
+                  href='#'
+                >
                   Portfolio
-                </a>
+                </Link>
                 <br />
-                <a href='' className='footer-nav'>
+                <Link
+                  smooth={true}
+                  to='contact'
+                  offset={-110}
+                  className='footer-nav'
+                  href='#'
+                >
                   Contact Me
-                </a>
+                </Link>
               </div>
             </div>
           </div>

@@ -10,10 +10,15 @@ const Navbar = () => {
   return (
     <nav className='navbar navbar-expand-lg navbar-light bg-dark fixed-top'>
       <div className='container'>
-        {/* FIXME: link */}
-        <a className='navbar-brand' href='#'>
+        <Link
+          smooth={true}
+          to='home'
+          // offset={-110}
+          className='nav-link'
+          href='#'
+        >
           <img className='logo' src={logo} alt='logo...' />
-        </a>
+        </Link>
         <button
           className='navbar-toggler'
           type='button'
@@ -26,7 +31,6 @@ const Navbar = () => {
           <FontAwesomeIcon icon={faBars} style={{ color: '#fff' }} />
         </button>
 
-        {/* FIXME: nav links */}
         <div className='collapse navbar-collapse' id='navbarSupportedContent'>
           <ul className='navbar-nav ml-auto'>
             <li className='nav-item active'>
