@@ -1,15 +1,18 @@
-import React from 'react';
-import netflix from '../images/netflix.png';
-import cityGuide from '../images/city-guide-app.png';
-import portfolio from '../images/portfolio.png';
-import taskManager from '../images/task-manager.png';
+// FIXME: uupdate picture links
+import React from 'react'
+import netflix from '../assets/images/portfolio/netflix.png'
+import cityGuide from '../assets/images/portfolio/city-guide-app.png'
+import portfolio from '../assets/images/portfolio/portfolio.png'
+import taskManager from '../assets/images/portfolio/task-manager.png'
+import '../css/Portfolio.css'
 // Fontawesome Imports
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSearchPlus } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faSearchPlus } from '@fortawesome/free-solid-svg-icons'
 // React Popupbox
-import { PopupboxManager, PopupboxContainer } from 'react-popupbox';
-import 'react-popupbox/dist/react-popupbox.css';
+import { PopupboxManager, PopupboxContainer } from 'react-popupbox'
+import 'react-popupbox/dist/react-popupbox.css'
 
+// FIXME: update portfolio projects
 const Portfolio = () => {
   // Netflix
   const openPopupboxNetflix = () => {
@@ -24,7 +27,7 @@ const Portfolio = () => {
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam,
           inventore.
         </p>
-        <b>Github:</b>{' '}
+        <b>Github:</b> {/* FIXME: links */}
         <a
           className='hyper-link'
           onClick={() =>
@@ -34,9 +37,9 @@ const Portfolio = () => {
           https://github.com/n305oul93/react-portfolio
         </a>
       </>
-    );
-    PopupboxManager.open({ content });
-  };
+    )
+    PopupboxManager.open({ content })
+  }
 
   const popupboxConfigNetflx = {
     titleBar: {
@@ -45,7 +48,7 @@ const Portfolio = () => {
     },
     fadeIn: true,
     fadeInSpeed: 500
-  };
+  }
 
   // City Guide App
   const openPopupboxCityGuide = () => {
@@ -72,9 +75,9 @@ const Portfolio = () => {
           https://github.com/n305oul93/react-portfolio
         </a>
       </>
-    );
-    PopupboxManager.open({ content });
-  };
+    )
+    PopupboxManager.open({ content })
+  }
 
   const popupboxConfigCityGuide = {
     titleBar: {
@@ -83,7 +86,7 @@ const Portfolio = () => {
     },
     fadeIn: true,
     fadeInSpeed: 500
-  };
+  }
 
   return (
     <div id='portfolio' className='portfolio-wrapper'>
@@ -134,7 +137,7 @@ const Portfolio = () => {
       <PopupboxContainer {...popupboxConfigNetflx} />
       <PopupboxContainer {...popupboxConfigCityGuide} />
     </div>
-  );
-};
+  )
+}
 
-export default Portfolio;
+export default Portfolio

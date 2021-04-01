@@ -1,0 +1,29 @@
+:root {
+  --primary-green: #6bd425;
+}
+
+/* ***************** About Me **************************** */
+.photo-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profile-img {
+  width: 16rem;
+  height: 16rem;
+  border-radius: 50%;
+  padding: 0.3rem;
+  border: 1px solid var(--primary-green);
+}
+
+.about-heading {
+  color: var(--primary-green);
+  text-transform: uppercase;
+}
+
+@media (max-width: 468px) {
+  .profile-img {
+    width: 10rem;
+    height: 10rem;
+  }
+}

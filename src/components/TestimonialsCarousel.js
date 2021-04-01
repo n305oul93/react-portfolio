@@ -1,10 +1,11 @@
-import React from 'react';
-import { Carousel } from 'react-responsive-carousel';
-import 'react-responsive-carousel/lib/styles/carousel.min.css';
-import avatar1 from '../images/avatars/avatar-1.png';
-import avatar2 from '../images/avatars/avatar-2.png';
-import avatar3 from '../images/avatars/avatar-3.png';
-import avatar4 from '../images/avatars/avatar-4.png';
+import React from 'react'
+import { Carousel } from 'react-responsive-carousel'
+import '../css/Testimonials.css'
+import 'react-responsive-carousel/lib/styles/carousel.min.css'
+import avatar1 from '../assets/avatars/avatar-1.png'
+import avatar2 from '../assets/avatars/avatar-2.png'
+import avatar3 from '../assets/avatars/avatar-3.png'
+import avatar4 from '../assets/avatars/avatar-4.png'
 
 const TestimonialsCarousel = () => {
   return (
@@ -61,7 +62,7 @@ const TestimonialsCarousel = () => {
         </div>
       </>
     </Carousel>
-  );
-};
+  )
+}
 
-export default TestimonialsCarousel;
+export default TestimonialsCarousel

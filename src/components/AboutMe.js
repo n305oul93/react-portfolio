@@ -1,5 +1,6 @@
-import React from 'react';
-import dez from '../Pringle_Desmond-SF.jpg';
+import React from 'react'
+import dez from '../assets/images/Pringle_Desmond-SF.jpg'
+import '../css/AboutMe.css'
 
 const AboutMe = () => {
   return (
@@ -12,6 +13,7 @@ const AboutMe = () => {
         </div>
         <div className='col-lg-6 col-xs-12'>
           <h1 className='about-heading'>about me</h1>
+          {/* FIXME: update message */}
           <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus
             rem temporibus quo voluptas exercitationem quia nam dolorem
@@ -29,7 +31,7 @@ const AboutMe = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default AboutMe;
+export default AboutMe

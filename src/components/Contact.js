@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import emailjs from 'emailjs-com'
 import { useForm } from 'react-hook-form'
+import '../css/Contact.css'
 
 const Contact = () => {
   const [successMessage, setSuccessMessage] = useState('')

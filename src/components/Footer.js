@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 import {
   FacebookShareButton,
   FacebookIcon,
@@ -8,7 +8,8 @@ import {
   RedditIcon,
   LinkedinShareButton,
   LinkedinIcon
-} from 'react-share';
+} from 'react-share'
+import '../css/Footer.css'
 
 const Footer = () => {
   return (
@@ -17,18 +18,19 @@ const Footer = () => {
         <div className='row'>
           <div className='col-lg-4 col-md-6 col-sm-6'>
             <div className='d-flex'>
-              <p>city myCity Main st 2020 office #223</p>
+              <p>Garland, Tx</p>
             </div>
             <div className='d-flex'>
-              <a href='tel:555-555-5555'>(555)555-5555</a>
+              <a href='tel:555-555-5555'>(469)248-5637</a>
             </div>
             <div className='d-flex'>
-              <p>email@email.com</p>
+              <p>dez@djpringle.me</p>
             </div>
           </div>
           <div className='col-lg-3 col-md-2 col-sm-6'>
             <div className='row'>
               <div className='col'>
+                {/* FIXME: links */}
                 <a href='' className='footer-nav'>
                   Home
                 </a>
@@ -38,7 +40,7 @@ const Footer = () => {
                 </a>
                 <br />
                 <a href='' className='footer-nav'>
-                  Services
+                  Skills
                 </a>
               </div>
               <div className='col'>
@@ -95,7 +97,7 @@ const Footer = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer

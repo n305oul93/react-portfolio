@@ -1,20 +1,27 @@
-import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebookF, faGoogle } from '@fortawesome/free-brands-svg-icons';
-import { faDesktop, faFileCode } from '@fortawesome/free-solid-svg-icons';
+import React from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {
+  faNodeJs,
+  faAws,
+  faDocker,
+  faLinux
+} from '@fortawesome/free-brands-svg-icons'
+import { faDesktop, faFileCode } from '@fortawesome/free-solid-svg-icons'
+import '../css/Skills.css'
 
-const Services = () => {
+// FIXME: update messaging
+const Skills = () => {
   return (
-    <div id='services' className='services'>
-      <h1 className='py-5'>my services</h1>
+    <div id='skills' className='skills'>
+      <h1 className='py-5'>my skills</h1>
       <div className='container'>
         <div className='row'>
           <div className='col-lg-3 col-md-6 col-sm-6'>
             <div className='box'>
               <div className='circle'>
-                <FontAwesomeIcon className='icon' icon={faDesktop} size='2x' />
+                <FontAwesomeIcon className='icon' icon={faNodeJs} size='2x' />
               </div>
-              <h3>Web Design</h3>
+              <h3>Javascript</h3>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Provident, a.
@@ -25,9 +32,9 @@ const Services = () => {
           <div className='col-lg-3 col-md-6 col-sm-6'>
             <div className='box'>
               <div className='circle'>
-                <FontAwesomeIcon className='icon' icon={faFileCode} size='2x' />
+                <FontAwesomeIcon className='icon' icon={faDocker} size='2x' />
               </div>
-              <h3>Web Development</h3>
+              <h3>Docker</h3>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Obcaecati, accusantium?
@@ -38,13 +45,9 @@ const Services = () => {
           <div className='col-lg-3 col-md-6 col-sm-6'>
             <div className='box'>
               <div className='circle'>
-                <FontAwesomeIcon
-                  className='icon'
-                  icon={faFacebookF}
-                  size='2x'
-                />
+                <FontAwesomeIcon className='icon' icon={faAws} size='2x' />
               </div>
-              <h3>Facebook Ads SMM</h3>
+              <h3>AWS</h3>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas,
                 expedita.
@@ -55,9 +58,9 @@ const Services = () => {
           <div className='col-lg-3 col-md-6 col-sm-6'>
             <div className='box'>
               <div className='circle'>
-                <FontAwesomeIcon className='icon' icon={faGoogle} size='2x' />
+                <FontAwesomeIcon className='icon' icon={faLinux} size='2x' />
               </div>
-              <h3>Google Ads</h3>
+              <h3>Linux</h3>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas,
                 expedita.
@@ -67,7 +70,7 @@ const Services = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Services;
+export default Skills
