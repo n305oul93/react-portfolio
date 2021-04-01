@@ -1,15 +1,15 @@
-import React, { useState } from 'react';
-import emailjs from 'emailjs-com';
-import { useForm } from 'react-hook-form';
+import React, { useState } from 'react'
+import emailjs from 'emailjs-com'
+import { useForm } from 'react-hook-form'
 
 const Contact = () => {
-  const [successMessage, setSuccessMessage] = useState('');
+  const [successMessage, setSuccessMessage] = useState('')
 
-  const { register, handleSubmit, errors } = useForm();
+  const { register, handleSubmit, errors } = useForm()
 
-  const serviceID = 'service_4pczp97';
-  const templateID = 'template_ID';
-  const userID = '';
+  const serviceID = 'service_398fjvg'
+  const templateID = 'template_x8arvbi'
+  const userID = ''
 
   const onSubmit = (data, reset) => {
     sendEmail(
@@ -23,9 +23,9 @@ const Contact = () => {
         description: data.description
       },
       userID
-    );
-    reset.target.reset();
-  };
+    )
+    reset.target.reset()
+  }
 
   function sendEmail(serviceID, templateID, variables, userID) {
     emailjs
@@ -33,9 +33,9 @@ const Contact = () => {
       .then(() => {
         setSuccessMessage(
           "Form sent successfully! I'll contact you as soon as possible."
-        );
+        )
       })
-      .catch(err => console.error(`Something went wrong ${err}`));
+      .catch(err => console.error(`Something went wrong ${err}`))
   }
 
   return (
@@ -152,7 +152,7 @@ const Contact = () => {
         </form>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Contact;
+export default Contact
