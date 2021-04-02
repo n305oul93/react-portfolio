@@ -1,7 +1,7 @@
 // FIXME: uupdate picture links
 import React from 'react'
-import netflix from '../assets/images/portfolio/netflix.png'
-import cityGuide from '../assets/images/portfolio/city-guide-app.png'
+import sportsFanCafe from '../assets/images/portfolio/sportsFanCafe/sportsFanCafe.png'
+import mintBean from '../assets/images/portfolio/mintBean/mintBean.png'
 import portfolio from '../assets/images/portfolio/portfolio.png'
 import taskManager from '../assets/images/portfolio/task-manager.png'
 import '../css/Portfolio.css'
@@ -14,50 +14,54 @@ import 'react-popupbox/dist/react-popupbox.css'
 
 // FIXME: update portfolio projects
 const Portfolio = () => {
-  // Netflix
-  const openPopupboxNetflix = () => {
+  // Spotsfan Cafe
+  const openPopupboxSportsFanCafe = () => {
     const content = (
       <>
         <img
           className='portfolio-image-popupbox'
-          src={netflix}
-          alt='Netflix Clone Project...'
+          src={sportsFanCafe}
+          alt='Sportsfan Cafe Project...'
         />
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam,
           inventore.
         </p>
+        <b>Demo:</b> <a>Link to demo</a>
+        <br />
         <b>Github:</b> {/* FIXME: links */}
         <a
+          href='/'
           className='hyper-link'
           onClick={() =>
-            window.open('https://github.com/n305oul93/react-portfolio')
+            window.open('https://github.com/n305oul93/sportsfan-cafe-react')
           }
         >
-          https://github.com/n305oul93/react-portfolio
+          https://github.com/n305oul93/sportsfan-cafe-react
         </a>
       </>
     )
-    PopupboxManager.open({ content })
+    PopupboxManager.open({
+      content,
+      config: {
+        titleBar: {
+          enable: true,
+          text: 'Sportsfan Cafè project'
+        },
+        fadeIn: true,
+        fadeInSpeed: 500
+      }
+    })
   }
 
-  const popupboxConfigNetflx = {
-    titleBar: {
-      enable: true,
-      text: 'Netflix clone project'
-    },
-    fadeIn: true,
-    fadeInSpeed: 500
-  }
-
-  // City Guide App
-  const openPopupboxCityGuide = () => {
+  // Mintbean Hackathon Project
+  const openPopupboxMintBean = () => {
     const content = (
       <>
         <img
           className='portfolio-image-popupbox'
-          src={cityGuide}
-          alt='City Guide Project...'
+          src={mintBean}
+          alt='Mintbean Hackathon Project...'
         />
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam,
@@ -67,25 +71,29 @@ const Portfolio = () => {
         <br />
         <b>Github:</b>{' '}
         <a
+          href='/'
           className='hyper-link'
           onClick={() =>
-            window.open('https://github.com/n305oul93/react-portfolio')
+            window.open(
+              'https://github.com/n305oul93/https://github.com/our-mintbean-team'
+            )
           }
         >
-          https://github.com/n305oul93/react-portfolio
+          https://github.com/n305oul93/https://github.com/our-mintbean-team
         </a>
       </>
     )
-    PopupboxManager.open({ content })
-  }
-
-  const popupboxConfigCityGuide = {
-    titleBar: {
-      enable: true,
-      text: 'City Guide App project'
-    },
-    fadeIn: true,
-    fadeInSpeed: 500
+    PopupboxManager.open({
+      content,
+      config: {
+        titleBar: {
+          enable: true,
+          text: 'City Guide project'
+        },
+        fadeIn: true,
+        fadeInSpeed: 500
+      }
+    })
   }
 
   return (
@@ -93,20 +101,23 @@ const Portfolio = () => {
       <div className='container'>
         <h1 className='text-uppercase text-center py-5'>portfolio</h1>
         <div className='image-box-wrapper row justify-content-center'>
-          <div className='portfolio-image-box' onClick={openPopupboxNetflix}>
+          <div
+            className='portfolio-image-box'
+            onClick={openPopupboxSportsFanCafe}
+          >
             <img
-              src={netflix}
-              alt='Netflix Clone Project...'
+              src={sportsFanCafe}
+              alt='Sportsfan Cafe Project...'
               className='portfolio-image'
             />
             <div className='overflow'></div>
             <FontAwesomeIcon className='portfolio-icon' icon={faSearchPlus} />
           </div>
           {/* - */}
-          <div className='portfolio-image-box' onClick={openPopupboxCityGuide}>
+          <div className='portfolio-image-box' onClick={openPopupboxMintBean}>
             <img
-              src={cityGuide}
-              alt='City Guide Project...'
+              src={mintBean}
+              alt='Mintbean Hackathon Project...'
               className='portfolio-image'
             />
             <div className='overflow'></div>
@@ -134,8 +145,7 @@ const Portfolio = () => {
           </div>
         </div>
       </div>
-      <PopupboxContainer {...popupboxConfigNetflx} />
-      <PopupboxContainer {...popupboxConfigCityGuide} />
+      <PopupboxContainer />
     </div>
   )
 }
