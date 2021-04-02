@@ -8,9 +8,9 @@ const Contact = () => {
 
   const { register, handleSubmit, errors } = useForm()
 
-  const serviceID = 'service_398fjvg'
-  const templateID = 'template_x8arvbi'
-  const userID = ''
+  const serviceID = process.env.REACT_APP_EMAILJS_SERVICE_ID
+  const templateID = process.env.REACT_APP_EMAILJS_TEMPLATE_ID
+  const userID = process.env.REACT_APP_EMAILJS_USER_ID
 
   const onSubmit = (data, reset) => {
     sendEmail(
