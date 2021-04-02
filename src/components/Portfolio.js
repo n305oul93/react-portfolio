@@ -1,109 +1,135 @@
-import React from 'react';
-import netflix from '../images/netflix.png';
-import cityGuide from '../images/city-guide-app.png';
-import portfolio from '../images/portfolio.png';
-import taskManager from '../images/task-manager.png';
+// FIXME: uupdate picture links
+import React from 'react'
+import sportsFanCafe from '../assets/images/portfolio/sportsFanCafe/sportsFanCafe.png'
+import mintBean from '../assets/images/portfolio/mintBean/mintBean.png'
+import portfolio from '../assets/images/portfolio/portfolio.png'
+import taskManager from '../assets/images/portfolio/task-manager.png'
+import '../css/Portfolio.css'
 // Fontawesome Imports
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSearchPlus } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faSearchPlus } from '@fortawesome/free-solid-svg-icons'
 // React Popupbox
-import { PopupboxManager, PopupboxContainer } from 'react-popupbox';
-import 'react-popupbox/dist/react-popupbox.css';
+import { PopupboxManager, PopupboxContainer } from 'react-popupbox'
+import 'react-popupbox/dist/react-popupbox.css'
 
+// FIXME: update portfolio projects
 const Portfolio = () => {
-  // Netflix
-  const openPopupboxNetflix = () => {
+  // Spotsfan Cafe
+  const openPopupboxSportsFanCafe = () => {
     const content = (
       <>
         <img
           className='portfolio-image-popupbox'
-          src={netflix}
-          alt='Netflix Clone Project...'
+          src={sportsFanCafe}
+          alt='Sportsfan Cafe Project...'
         />
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam,
           inventore.
         </p>
-        <b>Github:</b>{' '}
+        <b>Demo:</b>{' '}
         <a
+          href='/'
           className='hyper-link'
           onClick={() =>
-            window.open('https://github.com/n305oul93/react-portfolio')
+            window.open('https://github.com/n305oul93/sportsfan-cafe-react')
           }
         >
-          https://github.com/n305oul93/react-portfolio
+          Link to demo
+        </a>
+        <br />
+        <b>Github:</b>
+        <a
+          href='/'
+          className='hyper-link'
+          onClick={() =>
+            window.open('https://github.com/n305oul93/sportsfan-cafe-react')
+          }
+        >
+          https://github.com/n305oul93/sportsfan-cafe-react
         </a>
       </>
-    );
-    PopupboxManager.open({ content });
-  };
+    )
+    PopupboxManager.open({
+      content,
+      config: {
+        titleBar: {
+          enable: true,
+          text: 'Sportsfan Cafè project'
+        },
+        fadeIn: true,
+        fadeInSpeed: 500
+      }
+    })
+  }
 
-  const popupboxConfigNetflx = {
-    titleBar: {
-      enable: true,
-      text: 'Netflix clone project'
-    },
-    fadeIn: true,
-    fadeInSpeed: 500
-  };
-
-  // City Guide App
-  const openPopupboxCityGuide = () => {
+  // Mintbean Hackathon Project
+  const openPopupboxMintBean = () => {
     const content = (
       <>
         <img
           className='portfolio-image-popupbox'
-          src={cityGuide}
-          alt='City Guide Project...'
+          src={mintBean}
+          alt='Mintbean Hackathon Project...'
         />
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam,
           inventore.
         </p>
-        <b>Demo:</b> <a>Link to demo</a>
+        <b>Demo:</b>{' '}
+        <a
+          href='/'
+          className='hyper-link'
+          onClick={() => window.open('https://github.com/our-mintbean-team')}
+        >
+          Link to demo
+        </a>
         <br />
         <b>Github:</b>{' '}
         <a
+          href='/'
           className='hyper-link'
-          onClick={() =>
-            window.open('https://github.com/n305oul93/react-portfolio')
-          }
+          onClick={() => window.open('https://github.com/our-mintbean-team')}
         >
-          https://github.com/n305oul93/react-portfolio
+          https://github.com/our-mintbean-team
         </a>
       </>
-    );
-    PopupboxManager.open({ content });
-  };
-
-  const popupboxConfigCityGuide = {
-    titleBar: {
-      enable: true,
-      text: 'City Guide App project'
-    },
-    fadeIn: true,
-    fadeInSpeed: 500
-  };
+    )
+    PopupboxManager.open({
+      content,
+      config: {
+        titleBar: {
+          enable: true,
+          text: 'City Guide project'
+        },
+        fadeIn: true,
+        fadeInSpeed: 500
+      }
+    })
+  }
 
   return (
     <div id='portfolio' className='portfolio-wrapper'>
       <div className='container'>
         <h1 className='text-uppercase text-center py-5'>portfolio</h1>
         <div className='image-box-wrapper row justify-content-center'>
-          <div className='portfolio-image-box' onClick={openPopupboxNetflix}>
+          <div
+            className='portfolio-image-box'
+            onClick={openPopupboxSportsFanCafe}
+          >
             <img
-              src={netflix}
-              alt='Netflix Clone Project...'
+              src={sportsFanCafe}
+              alt='Sportsfan Cafe Project...'
               className='portfolio-image'
             />
             <div className='overflow'></div>
             <FontAwesomeIcon className='portfolio-icon' icon={faSearchPlus} />
           </div>
           {/* - */}
-          <div className='portfolio-image-box' onClick={openPopupboxCityGuide}>
+          <div className='portfolio-image-box' onClick={openPopupboxMintBean}>
             <img
-              src={cityGuide}
-              alt='City Guide Project...'
+              src={mintBean}
+              alt='Mintbean Hackathon Project...'
               className='portfolio-image'
             />
             <div className='overflow'></div>
@@ -131,10 +157,9 @@ const Portfolio = () => {
           </div>
         </div>
       </div>
-      <PopupboxContainer {...popupboxConfigNetflx} />
-      <PopupboxContainer {...popupboxConfigCityGuide} />
+      <PopupboxContainer />
     </div>
-  );
-};
+  )
+}
 
-export default Portfolio;
+export default Portfolio

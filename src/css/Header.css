@@ -1,0 +1,82 @@
+:root {
+  --primary-white: #e2e2e2;
+  --primary-green: #6bd425;
+  --primary-blue: #247ba0;
+  --primary-hover-blue: #0a2463;
+}
+
+/* ***************** Header **************************** */
+
+.header-wrapper {
+  position: relative;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9)),
+    url('../assets/images/laptop-background.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.main-info {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 1;
+}
+
+.main-info h1 {
+  color: var(--primary-green);
+  text-transform: uppercase;
+}
+
+/* --- Typed TEXT ---  */
+.typed-text {
+  font-size: 2rem;
+  color: var(--primary-white);
+}
+
+@media (max-width: 768px) {
+  .main-info h1 {
+    font-size: 1.7rem !important;
+  }
+  .typed-text {
+    font-size: 1.3rem !important;
+  }
+}
+
+/* --- HEADER MAIN OFFER BUTTON ---  */
+.btn-main-offer {
+  border: 1px solid var(--primary-blue);
+  text-transform: uppercase;
+  border-radius: 0;
+  padding: 0.625rem 0.75rem 0.75rem 0.75rem;
+  color: var(--primary-white);
+  margin: 2rem;
+}
+
+.btn-main-offer:hover {
+  text-decoration: none;
+  background-color: var(--primary-hover-blue);
+  color: var(--primary-white);
+  transition: 0.2s ease-in-out;
+}
+
+/* --- PARTICLES JS ---  */
+.tsparticles-canvas-el {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .particles-canvas {
+    display: none;
+  }
+}

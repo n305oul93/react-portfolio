@@ -1,5 +1,6 @@
-import React from 'react';
-import TestimonialCarousel from './TestimonialsCarousel';
+import React from 'react'
+import TestimonialCarousel from './TestimonialsCarousel'
+import '../css/Testimonials.css'
 
 const Testimonials = () => {
   return (
@@ -11,7 +12,7 @@ const Testimonials = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Testimonials;
+export default Testimonials

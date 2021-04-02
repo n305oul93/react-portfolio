@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 import {
   FacebookShareButton,
   FacebookIcon,
@@ -8,7 +8,9 @@ import {
   RedditIcon,
   LinkedinShareButton,
   LinkedinIcon
-} from 'react-share';
+} from 'react-share'
+import { Link } from 'react-scroll'
+import '../css/Footer.css'
 
 const Footer = () => {
   return (
@@ -17,42 +19,67 @@ const Footer = () => {
         <div className='row'>
           <div className='col-lg-4 col-md-6 col-sm-6'>
             <div className='d-flex'>
-              <p>city myCity Main st 2020 office #223</p>
+              <p>Garland, Tx</p>
             </div>
             <div className='d-flex'>
-              <a href='tel:555-555-5555'>(555)555-5555</a>
+              <a href='tel:469-248-5637'>(469)248-5637</a>
             </div>
             <div className='d-flex'>
-              <p>email@email.com</p>
+              <a href='mailto:dez@djpringle.me'>dez@djpringle.me</a>
             </div>
           </div>
           <div className='col-lg-3 col-md-2 col-sm-6'>
             <div className='row'>
               <div className='col'>
-                <a href='' className='footer-nav'>
-                  Home
-                </a>
+                <Link smooth={true} to='home' className='footer-nav'>
+                  Home <span className='sr-only'>(current)</span>
+                </Link>
                 <br />
-                <a href='' className='footer-nav'>
+                <Link
+                  smooth={true}
+                  to='about'
+                  offset={-110}
+                  className='footer-nav'
+                >
                   About Me
-                </a>
+                </Link>
                 <br />
-                <a href='' className='footer-nav'>
-                  Services
-                </a>
+                <Link
+                  smooth={true}
+                  to='skills'
+                  offset={-110}
+                  className='footer-nav'
+                >
+                  Skills
+                </Link>
               </div>
               <div className='col'>
-                <a href='' className='footer-nav'>
+                <Link
+                  smooth={true}
+                  to='experience'
+                  offset={-110}
+                  className='footer-nav'
+                >
                   Experience
-                </a>
+                </Link>
                 <br />
-                <a href='' className='footer-nav'>
+                <Link
+                  smooth={true}
+                  to='portfolio'
+                  offset={-110}
+                  className='footer-nav'
+                >
                   Portfolio
-                </a>
+                </Link>
                 <br />
-                <a href='' className='footer-nav'>
+                <Link
+                  smooth={true}
+                  to='contact'
+                  offset={-110}
+                  className='footer-nav'
+                >
                   Contact Me
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -95,7 +122,7 @@ const Footer = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer
