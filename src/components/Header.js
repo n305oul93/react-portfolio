@@ -26,7 +26,6 @@ const Header = () => {
           to='contact'
           offset={-110}
           className='btn-main-offer'
-          href='#'
         >
           contact me
         </Link>

@@ -15,7 +15,6 @@ const Navbar = () => {
           to='home'
           // offset={-110}
           className='nav-link'
-          href='#'
         >
           <img className='logo' src={logo} alt='logo...' />
         </Link>
@@ -34,18 +33,12 @@ const Navbar = () => {
         <div className='collapse navbar-collapse' id='navbarSupportedContent'>
           <ul className='navbar-nav ml-auto'>
             <li className='nav-item active'>
-              <Link smooth={true} to='home' className='nav-link' href='#'>
+              <Link smooth={true} to='home' className='nav-link'>
                 Home <span className='sr-only'>(current)</span>
               </Link>
             </li>
             <li className='nav-item'>
-              <Link
-                smooth={true}
-                to='about'
-                offset={-110}
-                className='nav-link'
-                href='#'
-              >
+              <Link smooth={true} to='about' offset={-110} className='nav-link'>
                 about me
               </Link>
             </li>
@@ -55,7 +48,6 @@ const Navbar = () => {
                 to='skills'
                 offset={-110}
                 className='nav-link'
-                href='#'
               >
                 skills
               </Link>
@@ -66,7 +58,6 @@ const Navbar = () => {
                 to='experience'
                 offset={-110}
                 className='nav-link'
-                href='#'
               >
                 experience
               </Link>
@@ -77,7 +68,6 @@ const Navbar = () => {
                 to='portfolio'
                 offset={-110}
                 className='nav-link'
-                href='#'
               >
                 portfolio
               </Link>
@@ -88,7 +78,6 @@ const Navbar = () => {
                 to='contact'
                 offset={-110}
                 className='nav-link'
-                href='#'
               >
                 contact me
               </Link>

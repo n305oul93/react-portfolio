@@ -27,9 +27,18 @@ const Portfolio = () => {
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam,
           inventore.
         </p>
-        <b>Demo:</b> <a>Link to demo</a>
+        <b>Demo:</b>{' '}
+        <a
+          href='/'
+          className='hyper-link'
+          onClick={() =>
+            window.open('https://github.com/n305oul93/sportsfan-cafe-react')
+          }
+        >
+          Link to demo
+        </a>
         <br />
-        <b>Github:</b> {/* FIXME: links */}
+        <b>Github:</b>
         <a
           href='/'
           className='hyper-link'
@@ -67,19 +76,22 @@ const Portfolio = () => {
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam,
           inventore.
         </p>
-        <b>Demo:</b> <a>Link to demo</a>
+        <b>Demo:</b>{' '}
+        <a
+          href='/'
+          className='hyper-link'
+          onClick={() => window.open('https://github.com/our-mintbean-team')}
+        >
+          Link to demo
+        </a>
         <br />
         <b>Github:</b>{' '}
         <a
           href='/'
           className='hyper-link'
-          onClick={() =>
-            window.open(
-              'https://github.com/n305oul93/https://github.com/our-mintbean-team'
-            )
-          }
+          onClick={() => window.open('https://github.com/our-mintbean-team')}
         >
-          https://github.com/n305oul93/https://github.com/our-mintbean-team
+          https://github.com/our-mintbean-team
         </a>
       </>
     )

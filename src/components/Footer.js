@@ -31,7 +31,7 @@ const Footer = () => {
           <div className='col-lg-3 col-md-2 col-sm-6'>
             <div className='row'>
               <div className='col'>
-                <Link smooth={true} to='home' className='footer-nav' href='#'>
+                <Link smooth={true} to='home' className='footer-nav'>
                   Home <span className='sr-only'>(current)</span>
                 </Link>
                 <br />
@@ -40,7 +40,6 @@ const Footer = () => {
                   to='about'
                   offset={-110}
                   className='footer-nav'
-                  href='#'
                 >
                   About Me
                 </Link>
@@ -50,7 +49,6 @@ const Footer = () => {
                   to='skills'
                   offset={-110}
                   className='footer-nav'
-                  href='#'
                 >
                   Skills
                 </Link>
@@ -61,7 +59,6 @@ const Footer = () => {
                   to='experience'
                   offset={-110}
                   className='footer-nav'
-                  href='#'
                 >
                   Experience
                 </Link>
@@ -71,7 +68,6 @@ const Footer = () => {
                   to='portfolio'
                   offset={-110}
                   className='footer-nav'
-                  href='#'
                 >
                   Portfolio
                 </Link>
@@ -81,7 +77,6 @@ const Footer = () => {
                   to='contact'
                   offset={-110}
                   className='footer-nav'
-                  href='#'
                 >
                   Contact Me
                 </Link>
