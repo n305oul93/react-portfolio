@@ -1,6 +1,6 @@
 # Desmond's Personal Portfolio Website
 
-###### A site created using react that showcases various projects I created or assisted on, and also has my resume and contatct information.
+###### A site created using react that showcases various projects I created or assisted on, and also has my resume and contact information.
 
 ## Deployment
 
