@@ -2,8 +2,8 @@
 import React from 'react'
 import sportsFanCafe from '../assets/images/portfolio/sportsFanCafe/sportsFanCafe.png'
 import mintBean from '../assets/images/portfolio/mintBean/mintBean.png'
-import portfolio from '../assets/images/portfolio/portfolio.png'
-import taskManager from '../assets/images/portfolio/task-manager.png'
+import indyFi from '../assets/images/portfolio/indyFi/indyFi.png'
+import bookStoreRails from '../assets/images/portfolio/bookStoreRails/bookStoreRails.png'
 import '../css/Portfolio.css'
 // Fontawesome Imports
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -27,7 +27,6 @@ const Portfolio = () => {
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam,
           inventore.
         </p>
-        <b>Demo:</b>{' '}
         <a
           href='/'
           className='hyper-link'
@@ -38,7 +37,6 @@ const Portfolio = () => {
           Link to demo
         </a>
         <br />
-        <b>Github:</b>
         <a
           href='/'
           className='hyper-link'
@@ -46,7 +44,7 @@ const Portfolio = () => {
             window.open('https://github.com/n305oul93/sportsfan-cafe-react')
           }
         >
-          https://github.com/n305oul93/sportsfan-cafe-react
+          Github Code
         </a>
       </>
     )
@@ -76,22 +74,24 @@ const Portfolio = () => {
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam,
           inventore.
         </p>
-        <b>Demo:</b>{' '}
         <a
           href='/'
           className='hyper-link'
-          onClick={() => window.open('https://github.com/our-mintbean-team')}
+          onClick={() =>
+            window.open(
+              'https://our-mintbean-team.github.io/texteditor-mintbean/'
+            )
+          }
         >
           Link to demo
         </a>
         <br />
-        <b>Github:</b>{' '}
         <a
           href='/'
           className='hyper-link'
           onClick={() => window.open('https://github.com/our-mintbean-team')}
         >
-          https://github.com/our-mintbean-team
+          Github Code
         </a>
       </>
     )
@@ -100,7 +100,101 @@ const Portfolio = () => {
       config: {
         titleBar: {
           enable: true,
-          text: 'City Guide project'
+          text: 'Text Editor | Mintbean Hackathon project'
+        },
+        fadeIn: true,
+        fadeInSpeed: 500
+      }
+    })
+  }
+
+  // IndyFi Project
+  const openPopupboxIndyFi = () => {
+    const content = (
+      <>
+        <img
+          className='portfolio-image-popupbox'
+          src={indyFi}
+          alt='IndyFi Project...'
+        />
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam,
+          inventore.
+        </p>
+        <a
+          href='/'
+          className='hyper-link'
+          onClick={() =>
+            window.open('https://github.com/n305oul93/indyfi-react')
+          }
+        >
+          Link to demo
+        </a>
+        <br />
+        <a
+          href='/'
+          className='hyper-link'
+          onClick={() =>
+            window.open('https://github.com/n305oul93/indyfi-react')
+          }
+        >
+          Github Code
+        </a>
+      </>
+    )
+    PopupboxManager.open({
+      content,
+      config: {
+        titleBar: {
+          enable: true,
+          text: 'IndyFi Independent Film Showcase project'
+        },
+        fadeIn: true,
+        fadeInSpeed: 500
+      }
+    })
+  }
+
+  // Book Store Ruby on Rails Project
+  const openPopupboxBookStoreRails = () => {
+    const content = (
+      <>
+        <img
+          className='portfolio-image-popupbox'
+          src={bookStoreRails}
+          alt='Book Store Ruby on Rails Project...'
+        />
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam,
+          inventore.
+        </p>
+        <a
+          href='/'
+          className='hyper-link'
+          onClick={() =>
+            window.open('https://github.com/n305oul93/bookstore_rails')
+          }
+        >
+          Link to demo
+        </a>
+        <br />
+        <a
+          href='/'
+          className='hyper-link'
+          onClick={() =>
+            window.open('https://github.com/n305oul93/bookstore_rails')
+          }
+        >
+          Github Code
+        </a>
+      </>
+    )
+    PopupboxManager.open({
+      content,
+      config: {
+        titleBar: {
+          enable: true,
+          text: 'Book Store Ruby on Rails project'
         },
         fadeIn: true,
         fadeInSpeed: 500
@@ -136,20 +230,23 @@ const Portfolio = () => {
             <FontAwesomeIcon className='portfolio-icon' icon={faSearchPlus} />
           </div>
           {/* - */}
-          <div className='portfolio-image-box'>
+          <div className='portfolio-image-box' onClick={openPopupboxIndyFi}>
             <img
-              src={portfolio}
-              alt='Portfolio React and Material UI Project...'
+              src={indyFi}
+              alt='IndyFi Project...'
               className='portfolio-image'
             />
             <div className='overflow'></div>
             <FontAwesomeIcon className='portfolio-icon' icon={faSearchPlus} />
           </div>
           {/* - */}
-          <div className='portfolio-image-box'>
+          <div
+            className='portfolio-image-box'
+            onClick={openPopupboxBookStoreRails}
+          >
             <img
-              src={taskManager}
-              alt='Task Manager React and Redux Project...'
+              src={bookStoreRails}
+              alt='Book Store Ruby on Rails Project...'
               className='portfolio-image'
             />
             <div className='overflow'></div>
