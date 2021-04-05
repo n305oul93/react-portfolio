@@ -23,10 +23,7 @@ const Portfolio = () => {
           src={sportsFanCafe}
           alt='Sportsfan Cafe Project...'
         />
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam,
-          inventore.
-        </p>
+        <p>Cafe & entertainment space built using react.</p>
         <a
           href='/'
           className='hyper-link'
@@ -71,8 +68,8 @@ const Portfolio = () => {
           alt='Mintbean Hackathon Project...'
         />
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam,
-          inventore.
+          Alien vs. Editor Mintbean Hackaton Project built using React with
+          basic CRUD and authentication elements.
         </p>
         <a
           href='/'
@@ -117,10 +114,7 @@ const Portfolio = () => {
           src={indyFi}
           alt='IndyFi Project...'
         />
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam,
-          inventore.
-        </p>
+        <p>Independent Sci-Fi film site built using React.</p>
         <a
           href='/'
           className='hyper-link'
@@ -164,10 +158,7 @@ const Portfolio = () => {
           src={bookStoreRails}
           alt='Book Store Ruby on Rails Project...'
         />
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam,
-          inventore.
-        </p>
+        <p>Simple bookstore created using Ruby on Rails.</p>
         <a
           href='/'
           className='hyper-link'
