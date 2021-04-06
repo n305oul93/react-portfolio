@@ -9,8 +9,8 @@
   align-items: center;
 }
 .profile-img {
-  width: 16rem;
-  height: 16rem;
+  width: 11rem;
+  height: auto;
   border-radius: 50%;
   padding: 0.3rem;
   border: 1px solid var(--primary-green);
