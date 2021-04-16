@@ -5,7 +5,7 @@
 ## Deployment
 
 Deployed to personal Cloud based VPS  
-[Live version](djpringle.me)
+[Live version](https://djpringle.me)
 
 ## Built with
 
