@@ -1,6 +1,7 @@
 // FIXME: uupdate picture links
 import React from 'react'
 import sportsFanCafe from '../assets/images/portfolio/sportsFanCafe/sportsFanCafe.png'
+import sportsFan from '../assets/videos/sportsFanCafe.mp4'
 import mintBean from '../assets/images/portfolio/mintBean/mintBean.png'
 import indyFi from '../assets/images/portfolio/indyFi/indyFi.png'
 import bookStoreRails from '../assets/images/portfolio/bookStoreRails/bookStoreRails.png'
@@ -18,17 +19,18 @@ const Portfolio = () => {
   const openPopupboxSportsFanCafe = () => {
     const content = (
       <>
-        <img
-          className='portfolio-image-popupbox'
-          src={sportsFanCafe}
-          alt='Sportsfan Cafe Project...'
-        />
-        <p>Cafe & entertainment space built using react.</p>
+        <video className='portfolio-image-popupbox' loop muted autoPlay>
+          <source src={sportsFan} type='video/mp4' />
+        </video>
+        <p>
+          App that repurposes coworking space as a cafe and sports gameday
+          hangout.
+        </p>
         <a
           href='/'
           className='hyper-link'
           onClick={() =>
-            window.open('https://github.com/n305oul93/sportsfan-cafe-react')
+            window.open('https://expo.io/@n305oul93/projects/sportsFanCafeRN')
           }
         >
           Link to demo
@@ -118,9 +120,7 @@ const Portfolio = () => {
         <a
           href='/'
           className='hyper-link'
-          onClick={() =>
-            window.open('https://github.com/n305oul93/indyfi-react')
-          }
+          onClick={() => window.open('https://indyfi.netlify.app/')}
         >
           Link to demo
         </a>
@@ -159,7 +159,7 @@ const Portfolio = () => {
           alt='Book Store Ruby on Rails Project...'
         />
         <p>Simple bookstore created using Ruby on Rails.</p>
-        <a
+        {/* <a
           href='/'
           className='hyper-link'
           onClick={() =>
@@ -167,7 +167,7 @@ const Portfolio = () => {
           }
         >
           Link to demo
-        </a>
+        </a> */}
         <br />
         <a
           href='/'
